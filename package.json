@@ -1,0 +1,43 @@
+{
+  "name": "@avonjs/client",
+  "version": "1.0.0",
+  "description": "Client SDK to interact with API written by Avonjs",
+  "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "files": ["dist", "jest.config.js", "license", "README"],
+  "scripts": {
+    "build": "tsc --build --clean & tsc --declaration",
+    "dev": "npx tsc --watch",
+    "format": "npx @biomejs/biome check --write --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avonjs/client.git"
+  },
+  "author": "Ismail Zare <zarehesmaiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avonjs/client/issues"
+  },
+  "homepage": "https://github.com/avonjs/client/blob/master/README.md",
+  "keywords": ["xarxa", "Delinternet"],
+  "dependencies": {
+    "npm": "^10.9.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.7",
+    "jest": "^29.7.0",
+    "lefthook": "^1.8.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
+  }
+}
